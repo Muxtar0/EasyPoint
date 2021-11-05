@@ -1,0 +1,1009 @@
+/*------------------
+Reset
+------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+body,html{
+    width: 100%;
+    overflow-x: hidden;
+}
+/*------------------
+Global Style
+------------------*/
+.SectionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+.SectionTitle h2{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 134.5%;
+/* or 40px */
+text-align: center;
+
+color: #000000;
+}
+.SectionTitle p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 141%;
+/* or 25px */
+
+text-align: center;
+width: 843px;
+color: #000000;
+margin-top: 22px;
+}
+/*------------------
+Banner
+------------------*/
+#Banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(218, 56, 49, 0.25) ,rgba(218, 56, 49, 0.25)),url(../images/zorlucenter_01\ 1.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+/*------------------
+Header
+------------------*/
+header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition:all 500ms;
+    margin-top: 22px;
+}
+header .DekstopNavCon .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .DekstopNavCon .col-12 .logo img{
+    width: 87px;
+    height: 87px;
+}
+header .DekstopNavCon .col-12 .NavListAndEnd{
+    display: flex;
+    align-items: center;
+}
+header .DekstopNavCon .col-12 .NavListAndEnd .NavList{
+    margin-right: 20px;
+}
+header .DekstopNavCon .col-12 .NavListAndEnd .NavList ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+header .DekstopNavCon .col-12 .NavListAndEnd .NavList ul li{
+    margin: 0 8px;
+    transition: all 300ms;
+}
+
+header .DekstopNavCon .col-12 .NavListAndEnd .NavList ul li a{
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #000000;
+}
+header.HomePageHeader .col-12 .NavListAndEnd .NavList ul li a{
+    color: #FFFFFF;
+}
+header .DekstopNavCon .col-12 .NavListAndEnd .NavEnd a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+height: 42px;
+border: 1px solid #DA3831;
+background: #DA3831;
+border-radius: 50px;
+font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* text */
+
+color: #E7E7E7;
+transition: all 300ms;
+}
+header .DekstopNavCon .col-12 .NavListAndEnd .NavEnd a:hover{
+    background: transparent;
+    color: #DA3831;
+}
+header.HomePageHeader .DekstopNavCon .col-12 .NavListAndEnd .NavEnd a:hover{
+    background: transparent;
+    color: white;
+}
+header .MobileNav .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header.active{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:90px;
+    background: white;
+}
+.MobileOpenMenu{
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    transition:all 500ms;
+}
+.MobileOpenMenu.active{
+    left: 0;
+}
+.MobileOpenMenu .Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MobileOpenMenu .NavListAndEnd .NavList{
+    margin-bottom: 20px;
+}
+.MobileOpenMenu .NavListAndEnd .NavList ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.MobileOpenMenu .NavListAndEnd .NavList ul li{
+    margin: 10px 0px;
+    transition: all 300ms;
+}
+
+.MobileOpenMenu .NavListAndEnd .NavList ul li a{
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #DA3831;
+}
+.MobileOpenMenu .NavListAndEnd .NavEnd a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+height: 42px;
+border: 1px solid #DA3831;
+background: #DA3831;
+border-radius: 50px;
+font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* text */
+
+color: white;
+transition: all 300ms;
+}
+.MobileOpenMenu .NavListAndEnd .NavEnd a:hover{
+    background: transparent;
+    color: #DA3831;
+}
+/*------------------
+Banner
+------------------*/
+#Banner .BannerBottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+#Banner .BannerBottom .CardTextContent{
+    padding: 15px 64px 32px 38px;
+}
+#Banner .BannerBottom .CardTextContent p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 141%;
+/* or 25px */
+
+
+color: #FFFFFF;
+}
+#Banner .BannerBottom .CardTextContent a{
+    display: flex;
+    align-items: center;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 141%;
+/* identical to box height, or 23px */
+
+margin-top: 25px;
+color: #FFFFFF;
+transition: all 300ms;
+}
+#Banner .BannerBottom .CardTextContent a:hover svg{
+    margin-left: 15px;
+}
+#Banner .BannerBottom .CardTextContent a svg{
+    margin-left: 10px;
+    transition: all 300ms;
+}
+#Banner .BannerBottom .Content1{
+    background: #DA3831;
+}
+#Banner .BannerBottom .Content2{
+    background: #FFFFFF;
+}
+#Banner .BannerBottom .Content2 p,
+#Banner .BannerBottom .Content2 a{
+    color: #000000;
+}
+#Banner .BannerBottom .Content2 a svg path {
+    fill: #000000;
+}
+#Banner .BannerBottom .Content3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    height: 100%;
+}
+#Banner .BannerBottom .Content3 img{
+    margin: 7px 0;
+}
+#Banner .BannerBottom .Content3 p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 141%;
+/* or 25px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+#Banner .BannerBottom .Content1,
+#Banner .BannerBottom .Content2{
+    width: 40%;
+    height: 100%;
+}
+#Banner .BannerBottom .Content3{
+    width: 20%;
+}
+/*------------------
+Features
+------------------*/
+#Features{
+    padding: 111px 0;
+}
+#Features .row{
+    position: relative;
+}
+
+#Features .Card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Features .Card .Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Features .Card .Content .Top{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+#Features .Card .Content .Top .TopIcon{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 129px;
+height: 129px;
+background: #DA3831;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+border-radius: 50%;
+}
+#Features .Card .Content .Top svg{
+    margin: auto;
+}
+#Features .Card .Content .Top .arrow{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#Features .Line{
+    position: absolute;
+    top: 31.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#Features .Card .Content p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+
+font-size: 18px;
+line-height: 134.5%;
+/* or 24px */
+
+text-align: center;
+
+color: #000000;
+margin-top: 25px;
+}
+#Features .Card .Content p span{
+    font-weight: bold;
+}
+/*------------------
+Shopping
+------------------*/
+#Shopping .col-12{
+    margin-top: 20px;
+}
+#Shopping .SectionTitle a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+height: 42px;
+border: 1px solid #DA3831;
+background: #DA3831;
+border-radius: 50px;
+font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* text */
+
+color: #E7E7E7;
+transition: all 300ms;
+margin-top: 15px;
+}
+#Shopping .SectionTitle a:hover{
+    background: transparent;
+    color: #DA3831;
+}
+#Shopping .ImageCol{
+    overflow: hidden;
+    border-radius: 20px;
+}
+#Shopping .ImageCol img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    transform: scale(1);
+}
+#Shopping .ImageCol:hover img{
+    transform: scale(1.1);
+}
+#Shopping .TextCol .Content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#Shopping .TextCol .Content .Text{
+    width: 397px;
+    transition: all 300ms;
+}
+
+#Shopping .TextCol .Content .Text h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 134.5%;
+/* identical to box height, or 27px */
+
+
+color: #000000;
+}
+#Shopping .TextCol .Content .Text p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 134.5%;
+    /* or 24px */
+    
+    margin-top: 11px;
+    color: #000000;
+}
+#Shopping .TextCol-1 .Content .Circle{
+    width: 130px;
+    height: 130px;
+    background: #DA3831;
+    border-radius: 50%;
+    margin-right: 30px;
+    transition: all 300ms;
+}
+#Shopping .TextCol-1 .Content .Circle2{
+    position: absolute;
+    top: 20%;
+    right:10%;
+    width: 52px;
+    height: 52px;
+    background: #464646;
+    transform: rotate(73.03deg);
+    border-radius: 50%;
+    transition: all 400ms;
+}
+#Shopping .TextCol-1 .Content:hover .Circle2{
+    top: 80%;
+    right: 20%;
+
+}
+#Shopping .TextCol-2 .Content .Circle{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 50.92px;
+    height: 50.92px;
+    border: 1px solid #DA3831;
+    box-sizing: border-box;
+    transform: rotate(93.86deg);
+    border-radius: 50%;
+    transition: all 500ms;
+}
+#Shopping .TextCol-2 .Content:hover .Circle{
+    left: 50%;
+    top: 70%;
+}
+#Shopping .TextCol-3 .Content .Circle{
+    position: absolute;
+    top: 20%;
+    right:  8%;
+    width: 99.01px;
+    height: 99.01px;
+    border: 1px solid #DA3831;
+    box-sizing: border-box;
+    transform: rotate(93.86deg);
+    border-radius: 50%;
+    transition: all 500ms;
+}
+#Shopping .TextCol-3 .Content .Circle2{
+    position: absolute;
+    top: 0%;
+    left:  2%;
+    width: 29.8px;
+    height: 29.8px;
+    background: #464646;
+    transform: rotate(93.86deg);
+    border-radius: 50%;
+    transition: all 500ms;
+}
+#Shopping .TextCol-3 .Content:hover .Circle{
+    right: 50%;
+    top: 70%;
+}
+#Shopping .TextCol-3 .Content:hover .Circle2{
+    left: 90%;
+    top: 20%;
+}
+/*------------------
+Services
+------------------*/
+#Services{
+    padding:55px 0;
+    background: #FBFBFB;
+    margin-top: 30px;
+}
+#Services .SectionTitle h2{
+    width: 731px;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 134.5%;
+/* or 27px */
+
+text-align: center;
+
+color: #000000;
+}
+#Services .SectionTitle p{
+    width: 656px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 134.5%;
+    /* or 24px */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+#Services .CardRow .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Services .CardRow .col-12 .Card{
+    margin: 0 5px ;
+}
+#Services .CardRow .col-12 .Card h3{
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 134.5%;
+/* or 24px */
+
+
+color: #000000;
+margin: 15px  0 10px 0;
+}
+#Services .CardRow .col-12 .Card p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 134.5%;
+/* or 19px */
+
+
+color: #000000;
+
+}
+/*------------------
+Express
+------------------*/
+#Express{
+    position: relative;
+    height: calc(100vh - 50px);
+    margin-top: 100px;
+}
+#Express .ExpressBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/Mask\ Group\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+#Express .Card{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    background: white;
+    padding: 35px 33px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
+
+}
+#Express .Card h2{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 134.5%;
+/* or 40px */
+
+text-align: center;
+
+color: #000000;
+}
+#Express .Card h4{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 134.5%;
+/* or 27px */
+
+text-align: center;
+
+color: #000000;
+margin: 24px 0 20px 0;
+}
+#Express .Card p{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 134.5%;
+/* or 24px */
+
+text-align: center;
+
+color: #000000;
+margin-bottom: 14px;
+}
+
+#Express .Card  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 222px;
+    height: 53px;
+border: 1px solid #DA3831;
+background: #DA3831;
+border-radius: 50px;
+font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* text */
+
+color: #E7E7E7;
+transition: all 300ms;
+margin: 0 auto;
+}
+#Express .Card a:hover{
+    background: transparent;
+    color: #DA3831;
+
+}
+/*------------------
+footer
+------------------*/
+footer{
+    background: #CD433B;
+    padding-top: 55px;
+    margin-top: 100px;
+}
+footer .TopFooter .LeftCol img{
+width: 90px;
+height: 90px;
+}
+footer .TopFooter .LeftCol p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 134.5%;
+/* or 22px */
+
+
+color: #FFFFFF;
+margin: 10px 0;
+}
+footer .TopFooter .LeftCol .SocilaMedias ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+footer .TopFooter .LeftCol .SocilaMedias ul li {
+    margin-right: 10px;
+}
+footer .TopFooter .ContactCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .TopFooter .ContactCol > div div:nth-child(1){
+    margin-bottom: 33px;
+}
+footer .TopFooter .ContactCol h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.015em;
+
+color: #FFFFFF;
+}
+footer .TopFooter .ContactCol p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.015em;
+
+color: #E6B3B3;
+}
+footer .TopFooter .FooterList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .TopFooter .FooterList ul{
+    margin: 0;
+    padding: 0;
+}
+footer .TopFooter .FooterList ul li{
+    margin: 8px 0;
+    transition: all 300ms;
+}
+footer .TopFooter .FooterList ul li:hover{
+    transform: translateX(5px);
+}
+footer .TopFooter .FooterList ul li a{
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.015em;
+
+color: #FFFFFF;
+}
+footer .TopFooter .FooterEnd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+footer .TopFooter .FooterEnd h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.015em;
+
+color: #FFFFFF;
+}
+footer .TopFooter .FooterEnd p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.015em;
+
+color: #E5B3B3;
+margin: 14px 0 24px 0;
+}
+footer .FooterBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 55px 0;
+}
+footer .FooterBottom p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+letter-spacing: 0.015em;
+
+color: #E5B3B3;
+}
+/*------------------
+Medias
+------------------*/
+@media (min-width:992px){
+    header .MobileNav{
+        display: none;
+    }
+}
+@media (max-width:992px) {
+    header .DekstopNavCon{
+        display: none;
+    }
+    .SectionTitle p{
+        width: 600px;
+    }
+    #Features .Line{
+        display: none;
+    }
+    #Features .Card .Content .Top .arrow{
+        display: none;
+    }
+    #Features .Card{
+        margin-top: 20px;
+    }
+    #Shopping .ImageCol img{
+        height: 400px;
+        width: 100%;
+    }
+    #Shopping .TextCol-1{
+        margin: 20px 0 40px 0;
+    }
+    #Shopping .TextCol-1 .Content .Circle2{
+        right: 5%;
+    }
+    #Shopping .TextCol-1 .Content:hover .Circle2{
+        top: 85%;
+    }
+    #Shopping .TextCol-2 .Content:hover .Circle{
+        left: 90%;
+    }
+    #Shopping .TextCol-3 .Content:hover .Circle{
+        right: 85%;
+        top: 60%;
+    }
+    #Services .CardRow .col-12{
+        flex-wrap: wrap;
+    }
+    #Services .CardRow .col-12 .Card{
+        margin: 20px 0;
+    }
+    footer .TopFooter .FooterList{
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+    footer .TopFooter .ContactCol{
+        align-items: flex-start;
+    }
+}
+@media (max-width:640px){
+    #Banner .BannerBottom .Content1, #Banner .BannerBottom .Content2{
+        width: 100%;
+    }
+    #Banner .BannerBottom .Content3{
+        width: 100%;
+    }
+    #Banner .BannerBottom{
+        flex-direction: column;
+    }
+    #Banner{
+        height: 100%;
+    }
+    .SectionTitle p{
+        width: 100%;
+    }
+    #Shopping .TextCol-1 .Content .Circle2{
+        top: 0;
+        right: 0;
+    }
+    #Shopping .TextCol-1 .Content:hover .Circle2{
+        top: 90%;
+    }
+
+    #Shopping .TextCol-2 .Content .Circle{
+        top: 0;
+        left: 40%;
+        width: 40px;
+        height: 40px;
+    }
+    #Shopping .TextCol-2 .Content:hover .Circle{
+        top: 83%;
+        left: 70%;
+    }
+    #Shopping .TextCol-3 .Content .Circle2{
+        left: 50%;
+    }
+    #Shopping .TextCol-3 .Content .Circle{
+        width: 70px;
+        height: 70px;
+        top: 90%;
+    }
+    #Shopping .TextCol-3 .Content:hover .Circle2{
+        top: 0;
+    }
+    #Shopping .TextCol-3 .Content:hover .Circle{
+        top: 100%;
+        right: 80%;
+    }
+    #Services .SectionTitle h2,
+    #Services .SectionTitle p{
+        width: 100%;
+    }
+    #Services .CardRow .col-12 .Card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #Express .ExpressBG{
+        height: calc(100vh + 50px);
+    }
+    #Express .Card{
+        bottom: auto;
+        top: 5%;
+       
+    }
+    #Banner .BannerBottom{
+        margin-top: 200px;
+    }
+    footer .TopFooter  .col-12{
+        margin-top: 20px;
+    }
+}
