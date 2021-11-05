@@ -1,6 +1,10 @@
 /*------------------
 Reset
 ------------------*/
+@font-face {
+    font-family: Aeonik;
+    src: url(../Font/Aeonik-Medium.otf);
+}
 *{
     padding: 0;
     margin: 0;
@@ -163,6 +167,7 @@ header.active{
     width: 100%;
     height:90px;
     background: white;
+    margin: 0;
 }
 .MobileOpenMenu{
     position: fixed;
@@ -731,6 +736,469 @@ margin: 0 auto;
 
 }
 /*------------------
+EasyAppBanner
+------------------*/
+#EasyAppBanner{
+    margin-top: 42px;
+}
+#EasyAppBanner h2{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 134.5%;
+/* or 40px */
+
+text-align: center;
+
+color: #000000;
+}
+#EasyAppBanner p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+
+font-size: 18px;
+line-height: 134.5%;
+/* or 24px */
+
+text-align: center;
+
+color: #292929;
+margin-top: 12px;
+margin-bottom: 42px;
+}
+#EasyAppBanner p span{
+    font-weight: bold;
+}
+#EasyAppBanner .DownloadLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#EasyAppBanner .DownloadLinks a{
+    margin: 0 10px;
+}
+#EasyAppBanner .AppImgCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+#EasyAppBanner .AppImgCol .AppImgDiv{
+    width: 824px;
+    height: 463px;
+    background: black;
+}
+#EasyAppBanner .AppImgCol .AppImgDiv img{
+    width: 100%;
+    height: 100%;
+}
+/*------------------
+MapSection
+------------------*/
+#MapSection{
+    margin-top: 150px;
+    background-image: url(../images/Screenshot\ from\ 2021-10-18\ 02-05-46\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#MapSection .Card{
+    width: 300px;
+    background: #DA3831;
+    padding: 50px 37px;
+    margin-left: 40px;
+}
+#MapSection .Card h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 134.5%;
+/* or 24px */
+
+
+color: #FFFFFF;
+}
+#MapSection .Card p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 143.5%;
+/* or 26px */
+
+
+color: #FFFFFF;
+margin: 16px 0 23px 0;
+}
+#MapSection .Card a{
+    display: flex ;
+    align-items: center ;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 134.5%;
+/* identical to box height, or 22px */
+
+
+
+color: #FFFFFF;
+}
+#MapSection .Card a svg{
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    transition: all 300ms;
+}
+#MapSection .Card a:hover svg{
+    margin-left: 15px;
+}
+/*------------------
+ExpressNoktasiBanner
+------------------*/
+#ExpressNoktasiBanner{
+    height: 550px;
+}
+
+#ExpressNoktasiBanner .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#ExpressNoktasiBanner .left h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 134.5%;
+/* or 54px */
+
+
+color: #000000;
+}
+#ExpressNoktasiBanner .left p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 142%;
+/* or 26px */
+
+
+color: #000000;
+margin: 13px 0 33px 0;
+}
+#ExpressNoktasiBanner .left a{
+    display: flex;
+    align-items: center;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 142%;
+/* identical to box height, or 23px */
+
+
+color: #DA3831;
+}
+#ExpressNoktasiBanner .left a svg{
+    margin-left: 10px;
+    transition: all 300ms;
+}
+#ExpressNoktasiBanner .left a:hover svg{
+    margin-left: 15px;
+}
+#ExpressNoktasiBanner .left a svg path{
+    fill: #DA3831;
+}
+#ExpressNoktasiBanner .right{
+    position: relative;
+}
+#ExpressNoktasiBanner .right .ImageDiv1{
+    width: 366.41px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 15px solid #DA3831;
+}
+#ExpressNoktasiBanner .right .ImageDiv1 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#ExpressNoktasiBanner .right .ImageDiv2{
+    width:230px;
+    height: 230px;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 15px solid #DA3831;
+}
+#ExpressNoktasiBanner .right .ImageDiv2 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#ExpressNoktasiBanner .right .ImageDiv3{
+    width:260px;
+    height: 260px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 15px solid #DA3831;
+}
+#ExpressNoktasiBanner .right .ImageDiv3 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+/*------------------
+Form
+------------------*/
+#Form{
+    padding: 55px 0;
+    background: #E5E5E5;
+}
+#Form .Left{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Form .Left .Circle1{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 50.92px;
+height: 50.92px;
+border: 1px solid #DA3831;
+box-sizing: border-box;
+transform: rotate(93.86deg);
+border-radius: 50%;
+z-index: 1;
+}
+#Form .Left .Circle2{
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    width: 47px;
+    height: 47px;
+    background: #DA3831;
+border-radius: 50%;
+z-index: 1;
+}
+#Form .Left .Content{
+    padding: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 90%;
+    z-index: 100;
+}
+#Form .Left .Content h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+
+color: #000000;
+text-align: center;
+margin-bottom: 25px ;
+}
+#Form .Left .Content p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.045em;
+
+color: #3D3D3D;
+margin-bottom: 10px;
+}
+#Form .Left .Content input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    background: #F7F7F7;
+border-radius: 10px;
+margin-bottom: 30px;
+padding: 0 15px;
+color: #C6C7CD;
+}
+#Form .Left .Content input::placeholder{
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.045em;
+
+color: #C6C7CD;
+}
+#Form .Left .Content select{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    background: #F7F7F7;
+border-radius: 10px;
+margin-bottom: 30px;
+padding: 0 15px;
+color: #C6C7CD;
+}
+#Form .Left .Content p.LastText{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 177.69%;
+/* or 21px */
+
+letter-spacing: 0.045em;
+
+color: #989EB0;
+padding: 25px 0;
+}
+#Form .Left .Content p.LastText span{
+    font-weight: bold;
+    color: #000000;
+}
+#Form .Left .Content button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: #DA3831;
+    border: 1px solid #DA3831;
+border-radius: 50px;
+font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+transition: all 300ms;
+
+color: #E7E7E7;
+}
+#Form .Left .Content button:hover{
+    background: transparent;
+    color: #DA3831;
+}
+#Form .Right .Content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#Form .Right .Content .Circle1{
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 40px;
+    height: 40px;
+    background: #464646;
+    transform: rotate(73.03deg);
+    border-radius: 50%;
+}
+#Form .Right .Content .Circle2{
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    background: #DA3831;
+    transform: rotate(73.03deg);
+    border-radius: 50%;
+}
+#Form .Right .Content .Circle3{
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 99.01px;
+    height: 99.01px;
+    border: 1px solid #DA3831;
+    box-sizing: border-box;
+    transform: rotate(13.24deg);
+    
+    border-radius: 50%;
+}
+#Form .Right .Content .Card{
+    width: 351px;
+    margin-bottom: 110px;
+}
+#Form .Right .Content .Card h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 142%;
+/* identical to box height, or 26px */
+
+
+color: #000000;
+margin: 0px 0 6px 0;
+}
+#Form .Right .Content .Card p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 142%;
+/* or 23px */
+
+
+color: #000000;
+}
+/*------------------
 footer
 ------------------*/
 footer{
@@ -881,6 +1349,11 @@ Medias
     header .MobileNav{
         display: none;
     }
+    #ExpressNoktasiBanner .container,
+#ExpressNoktasiBanner .container .row,
+#ExpressNoktasiBanner .container .row .col-12{
+    height: 100%;
+}
 }
 @media (max-width:992px) {
     header .DekstopNavCon{
@@ -923,6 +1396,38 @@ Medias
     }
     #Services .CardRow .col-12 .Card{
         margin: 20px 0;
+    }
+    #ExpressNoktasiBanner{
+        height: 100%;
+    }
+    #ExpressNoktasiBanner .right{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #ExpressNoktasiBanner .right .ImageDiv1{
+        position: relative ;
+        top: 0 ;
+        left: 0;
+        transform: translate(0,0);
+        margin-right: 5px;
+    }
+    #ExpressNoktasiBanner .right .ImageDiv2{
+        position: relative ;
+        top: 0 ;
+        left: 0;
+        transform: translate(0,0);
+        margin-right: 5px;
+    }
+    #ExpressNoktasiBanner .right .ImageDiv3{
+        position: relative ;
+        top: 0 ;
+        left: 0;
+        transform: translate(0,0);
+    }
+    #Form .Right{
+        margin-top: 50px;
     }
     footer .TopFooter .FooterList{
         justify-content: flex-start;
@@ -1002,6 +1507,26 @@ Medias
     }
     #Banner .BannerBottom{
         margin-top: 200px;
+    }
+    #MapSection .Card{
+        margin: 0;
+    }
+    #ExpressNoktasiBanner .right{
+        flex-direction: column;
+    }
+    #ExpressNoktasiBanner .right > div{
+        margin: 15px 0;
+    }
+    #Form .Left .Content{
+        width: 98%;
+        padding: 50px 20px;
+    }
+    #Form .Right .Content .Circle2{
+        top: 20%;
+    }
+    #Form .Right .Content .Circle3{
+        bottom: 2%;
+        right: 2%;
     }
     footer .TopFooter  .col-12{
         margin-top: 20px;
