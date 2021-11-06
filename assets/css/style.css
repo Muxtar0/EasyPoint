@@ -55,6 +55,40 @@ color: #000000;
 margin-top: 22px;
 }
 /*------------------
+Swiper
+------------------*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/*------------------
 Banner
 ------------------*/
 #Banner{
@@ -129,7 +163,7 @@ header .DekstopNavCon .col-12 .NavListAndEnd .NavEnd a{
     justify-content: center;
     width: 187px;
 height: 42px;
-border: 1px solid #DA3831;
+border: 1px solid  solid #DA3831;
 background: #DA3831;
 border-radius: 50px;
 font-family: Aeonik;
@@ -220,7 +254,7 @@ color: #DA3831;
     justify-content: center;
     width: 187px;
 height: 42px;
-border: 1px solid #DA3831;
+border: 1px solid  solid #DA3831;
 background: #DA3831;
 border-radius: 50px;
 font-family: Aeonik;
@@ -306,7 +340,7 @@ transition: all 300ms;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-top: 1px solid  solid rgba(255, 255, 255, 1);
     height: 100%;
 }
 #Banner .BannerBottom .Content3 img{
@@ -362,6 +396,10 @@ Features
     position: relative;
     width: 100%;
 }
+#Features .Card .Content .Top{
+    margin-top: 10px;
+    margin-bottom:22px;
+}
 #Features .Card .Content .Top .TopIcon{
     display: flex;
     align-content: center;
@@ -372,13 +410,33 @@ background: #DA3831;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 border-radius: 50%;
 }
-#Features .Card .Content .Top svg{
+#Features.FeaturesEasyPointExpress .Card .Content .Top .TopIcon{
+    width: 50px;
+    height: 50px;
+}
+#Features .Card .Content .Top svg.iconHomePage{
     margin: auto;
+    width: 65px;
+    height: 65px;
+}
+#Features.FeaturesEasyPointExpress .Card .Content .Top svg.icon{
+    margin: auto;
+    width: 25.19px;
+    height: 25.19px;
 }
 #Features .Card .Content .Top .arrow{
     position: absolute;
-    top: 50%;
+    top: 41%;
     right: 0;
+}
+#Features.FeaturesEasyPointExpress .Card .Content .Top .arrow{
+    position: absolute;
+    top:34%;
+    right: 0;
+}
+
+#Features.FeaturesEasyPointExpress .Card .Content .Top .arrow2{
+    top: 60%;
 }
 #Features .Line{
     position: absolute;
@@ -386,6 +444,13 @@ border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
 }
+#Features.FeaturesEasyPointExpress .Line{
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
 #Features .Card .Content p{
     margin: 0;
     padding: 0;
@@ -399,7 +464,22 @@ line-height: 134.5%;
 text-align: center;
 
 color: #000000;
-margin-top: 25px;
+
+
+}
+#Features.FeaturesEasyPointExpress h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 134.5%;
+/* or 24px */
+
+text-align: center;
+
+color: #000000;
 }
 #Features .Card .Content p span{
     font-weight: bold;
@@ -416,7 +496,7 @@ Shopping
     justify-content: center;
     width: 187px;
 height: 42px;
-border: 1px solid #DA3831;
+border: 1px solid  solid #DA3831;
 background: #DA3831;
 border-radius: 50px;
 font-family: Aeonik;
@@ -491,6 +571,9 @@ color: #000000;
     margin-top: 11px;
     color: #000000;
 }
+#Shopping .TextCol .Content .Text p span{
+    font-weight: bold;
+}
 #Shopping .TextCol-1 .Content .Circle{
     width: 130px;
     height: 130px;
@@ -521,7 +604,7 @@ color: #000000;
     left: 8%;
     width: 50.92px;
     height: 50.92px;
-    border: 1px solid #DA3831;
+    border: 1px solid  solid #DA3831;
     box-sizing: border-box;
     transform: rotate(93.86deg);
     border-radius: 50%;
@@ -537,7 +620,7 @@ color: #000000;
     right:  8%;
     width: 99.01px;
     height: 99.01px;
-    border: 1px solid #DA3831;
+    border: 1px solid  solid #DA3831;
     box-sizing: border-box;
     transform: rotate(93.86deg);
     border-radius: 50%;
@@ -711,7 +794,7 @@ margin-bottom: 14px;
     justify-content: center;
     width: 222px;
     height: 53px;
-border: 1px solid #DA3831;
+border: 1px solid  solid #DA3831;
 background: #DA3831;
 border-radius: 50px;
 font-family: Aeonik;
@@ -999,7 +1082,7 @@ Form
     top: 10%;
     width: 50.92px;
 height: 50.92px;
-border: 1px solid #DA3831;
+border: 1px solid  solid #DA3831;
 box-sizing: border-box;
 transform: rotate(93.86deg);
 border-radius: 50%;
@@ -1110,7 +1193,7 @@ padding: 25px 0;
     width: 100%;
     height: 50px;
     background: #DA3831;
-    border: 1px solid #DA3831;
+    border: 1px solid  solid #DA3831;
 border-radius: 50px;
 font-family: Aeonik;
 font-style: normal;
@@ -1161,7 +1244,7 @@ color: #E7E7E7;
     right: 0%;
     width: 99.01px;
     height: 99.01px;
-    border: 1px solid #DA3831;
+    border: 1px solid  solid #DA3831;
     box-sizing: border-box;
     transform: rotate(13.24deg);
     
@@ -1197,6 +1280,210 @@ line-height: 142%;
 
 
 color: #000000;
+}
+/*------------------
+Explanation
+------------------*/
+#Explanation{
+    background: #DA3831;
+    padding: 50px 0;
+}
+#Explanation .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Explanation .col-12 .left h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+margin: 5px 0;
+}
+#Explanation .col-12 .left p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;
+margin: 5px 0;
+}
+#Explanation .col-12 .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#Explanation .col-12 .right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 235px;
+height: 53.02px;
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 134.5%;
+/* identical to box height, or 22px */
+transition: all 300ms;
+display: flex;
+align-items: center;
+
+color: #181818 ;
+}
+#Explanation .col-12 .right a:hover{
+    background: transparent;
+    color: white;
+}
+/*------------------
+Freedom
+------------------*/
+#Freedom{
+    margin: 160px 0;
+}
+#Freedom .left{
+    border-radius: 20px;
+}
+#Freedom .left img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+#Freedom .right .col-12{
+    margin: 40px 0;
+}
+#Freedom .right .Content h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134.5%;
+    /* or 24px */
+
+
+    color: #000000;
+}
+#Freedom .right .Content p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 134.5%;
+    /* or 22px */
+
+
+    color: #000000;
+    margin-top: 5px;
+}
+/*------------------
+EarthImage
+------------------*/
+#EarthImage{
+    padding: 80px 0;
+}
+#EarthImage .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------
+UserStories
+------------------*/
+#UserStories{
+    padding: 50px 0;
+}
+#UserStories .UserStorySwiper{
+    padding-bottom:50px;
+}
+#UserStories .UserStorySwiper .swiper-pagination-bullet-active{
+    background: #7D7D7D;
+}
+#UserStories .SlideCol .Content{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.25);
+border-radius: 0px 20px 20px 0px;
+height: 200px;
+width: 100%;
+}
+#UserStories .SlideCol .Content .left{
+    height: 100%;
+    width: 40%;
+}
+#UserStories .SlideCol .Content .right{
+    width: 60%;
+}
+#UserStories .SlideCol .Content .right > div{
+    padding: 0 30px;
+}
+#UserStories .SlideCol .Content .left img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+#UserStories .SlideCol .Content .right h3{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.015em;
+
+color: #000000;
+text-align: start;
+}
+#UserStories .SlideCol .Content .right h4{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.015em;
+
+color: #575656;
+margin-bottom: 27px;
+text-align: start;
+}
+#UserStories .SlideCol .Content .right  p{
+    margin: 0;
+    padding: 0;
+    font-family: Aeonik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.005em;
+
+color: #575656;
+text-align: start;
 }
 /*------------------
 footer
@@ -1527,6 +1814,18 @@ Medias
     #Form .Right .Content .Circle3{
         bottom: 2%;
         right: 2%;
+    }
+    #Explanation .col-12{
+        flex-direction: column;
+    }
+    #Explanation .col-12 .right{
+        margin-top: 15px;
+    }
+    #EarthImage .col-12 img{
+        width: 100%;
+    }
+    #UserStories .SlideCol .Content .right > div{
+        padding: 0 10px;
     }
     footer .TopFooter  .col-12{
         margin-top: 20px;
