@@ -360,7 +360,7 @@ transition: all 300ms;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-top: 1px solid  solid rgba(255, 255, 255, 1);
+    border-top: 1px solid   rgba(255, 255, 255, 1) !important;
     height: 100%;
 }
 #Banner .BannerBottom .Content3 img{
