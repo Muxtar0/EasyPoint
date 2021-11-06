@@ -460,12 +460,12 @@ border-radius: 50%;
 }
 #Features.FeaturesEasyPointExpress .Card .Content .Top .arrow{
     position: absolute;
-    top:34%;
+    top:24%;
     right: 0;
 }
 
 #Features.FeaturesEasyPointExpress .Card .Content .Top .arrow2{
-    top: 60%;
+    top:50%;
 }
 #Features .Line{
     position: absolute;
@@ -1670,6 +1670,7 @@ Medias
     #Features .Card .Content .Top .arrow2{
         top: 40%;
     }
+
 }
 @media (min-width:992px){
     header .MobileNav{
