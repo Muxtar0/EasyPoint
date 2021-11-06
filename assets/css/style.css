@@ -29,6 +29,9 @@ p span{
 h2,h1,h3,h4{
     font-family: AeonikBold !important;
 }
+a{
+    font-family: AeonikRegular !important;
+}
 body,html{
     width: 100%;
     overflow-x: hidden;
@@ -1652,6 +1655,16 @@ color: #E5B3B3;
 /*------------------
 Medias
 ------------------*/
+@media  (max-width:1390px) {
+    #Features .Card .Content .Top .arrow{
+        position: absolute;
+        top: 40%;
+        right: 0;
+    }
+    #Features .Card .Content .Top .arrow2{
+        top: 40%;
+    }
+}
 @media (min-width:992px){
     header .MobileNav{
         display: none;
