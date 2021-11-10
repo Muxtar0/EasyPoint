@@ -42,6 +42,8 @@ body,html{
     width: 100%;
     overflow-x: hidden;
 }
+
+
 /*------------------
 Global Style
 ------------------*/
@@ -112,6 +114,12 @@ Swiper
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+  }
+  .PartnerlerimizSwiper .swiper-slide img {
+    display: block;
+    width: auto;
+    height: auto;
     object-fit: cover;
   }
 /*------------------
@@ -369,6 +377,12 @@ transition: all 300ms;
     border-top: 1px solid   rgba(255, 255, 255, 1) !important;
     height: 100%;
 }
+#Banner .BannerBottom .Content3 .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 #Banner .BannerBottom .Content3 img{
     margin: 7px 0;
 }
@@ -556,11 +570,9 @@ margin-top: 15px;
     width: 100%;
     height: 100%;
     transition: all 300ms;
-    transform: scale(1);
+    
 }
-#Shopping .ImageCol:hover img{
-    transform: scale(1.1);
-}
+
 #Shopping .TextCol .Content{
     height: 100%;
     width: 100%;
@@ -633,7 +645,7 @@ color: #000000;
     left: 8%;
     width: 50.92px;
     height: 50.92px;
-    border: 1px solid  solid #DA3831;
+    border: 1px solid   #DA3831;
     box-sizing: border-box;
     transform: rotate(93.86deg);
     border-radius: 50%;
@@ -649,7 +661,7 @@ color: #000000;
     right:  8%;
     width: 99.01px;
     height: 99.01px;
-    border: 1px solid  solid #DA3831;
+    border: 1px solid   #DA3831;
     box-sizing: border-box;
     transform: rotate(93.86deg);
     border-radius: 50%;
@@ -747,7 +759,7 @@ Express
 ------------------*/
 #Express{
     position: relative;
-    height: calc(100vh - 50px);
+    height: 600px;
     margin-top: 100px;
 }
 #Express .ExpressBG{
@@ -759,15 +771,16 @@ Express
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: 100%;
 }
 #Express .Card{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0%;
+    bottom: -30%;
     background: white;
     padding: 35px 33px;
+    width:600px;
     border-radius: 20px;
     filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
 
@@ -914,7 +927,7 @@ MapSection
 ------------------*/
 #MapSection{
     margin-top: 150px;
-    background-image: url(../images/Screenshot\ from\ 2021-10-18\ 02-05-46\ 1.png);
+    background-image: url(../images/hlast.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1515,12 +1528,230 @@ color: #575656;
 text-align: start;
 }
 /*------------------
+ServicePointSection
+------------------*/
+#ServicePointSection{
+    margin-top: 10px;
+    height: 100vh;
+    background: blue;
+    position: relative;
+}
+#ServicePointSectionResponsive{
+    display: none;
+    height: 100vh;
+    background: blue;
+    margin-top: 10px;
+    position: relative;
+}
+#ServicePointSection > .Content{
+    height: 100%;
+}
+#ServicePointSection .LeftContent{
+    margin-left: 100px;
+    background: white;
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px  60px 10px;
+    box-shadow: 0px 1px 10px rgba(170, 170, 171, 0.25);
+}
+#ServicePointSection .LeftContent h2{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.045em;
+    padding: 0 20px 0 10px;
+    color: #3D3D3D;
+}
+#ServicePointSection .LeftContent .SelectsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 20px 0 10px;
+}
+#ServicePointSection .LeftContent .SelectsDiv #KabinHizmeti{
+    margin-top: 10px;
+}
+#ServicePointSection .LeftContent .SelectsDiv select{
+    outline: none;
+    width: 100%;
+    height: 50px;
+    background: #F8F8F8;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.045em;
+
+color: #3C4257;
+
+opacity: 0.6;
+padding: 0 20px;
+}
+#ServicePointSection .LeftContent .Places{
+    width: 100%;
+    margin-top: 45px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+#ServicePointSection .LeftContent .Places::before{
+    content: "";
+    position: fixed;
+    width: 5px;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    background: #E7E7E7;
+}
+#ServicePointSection .LeftContent .Places::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+    
+}
+#ServicePointSection .LeftContent .Places::-webkit-scrollbar-thumb{
+   border-radius: 20px;
+    background: black;
+}
+#ServicePointSection .LeftContent .Places ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+#ServicePointSection .LeftContent .Places ul li{
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 1px 10px rgba(170, 170, 171, 0.25));
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+#ServicePointSection .LeftContent .Places ul li .left p,
+#ServicePointSection .LeftContent .Places ul li .left h3{
+    margin: 0;
+    padding: 0;
+}
+#ServicePointSection .LeftContent .Places ul li .left h3{
+    
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.045em;
+
+color: #000000;
+
+}
+#ServicePointSection .LeftContent .Places ul li .left p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+    
+    color: #000000;
+    margin-top: 10px;
+}
+#ServicePointSection .RightContent{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 313px;
+    height: 197px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#ServicePointSection .RightContent h2{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.045em;
+
+color: #000000;
+}
+#ServicePointSection .RightContent p{
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.045em;
+
+color: #000000;
+}
+#ServicePointSection .RightContent p svg{
+    margin-right: 5px;
+}
+#ServicePointSection .RightContent a{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.045em;
+
+color: #000000;
+}
+#ServicePointSection .RightContent a svg{
+    transition: all 300ms;
+}
+#ServicePointSection .RightContent a svg path {
+    fill: #000000;
+    margin-left: 5px;
+}
+#ServicePointSection .RightContent a:hover svg{
+    margin-left: 10px;
+}
+/*------------------
 footer
 ------------------*/
 footer{
     background: #CD433B;
     padding-top: 55px;
     margin-top: 100px;
+}
+footer.HizmetNoktalariFooter{
+    margin-top: 0;
+}
+footer.HomePageFooter{
+    margin-top: 250px;
 }
 footer .TopFooter .LeftCol img{
 width: 90px;
@@ -1754,11 +1985,44 @@ Medias
         transform: translate(0,0);
     }
     #Form .Right{
-        margin-top: 50px;
+        padding-top: 50px;
+    }
+    #Shopping .TextCol-2{
+        order: 2;
+        margin-top: 20px;
+    }
+
+    #Shopping .ImageCol2{
+        order: 1;
+    }
+    #Shopping .TextCol-3 .Content .Circle{
+        width: 40px;
+        height: 40px;
+    }
+    #ServicePointSection{
+        background: none;
+        background-image: none;
+        height: 100%;
+    }
+    #ServicePointSection .LeftContent{
+        margin-left: 0;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    #ServicePointSectionResponsive{
+        display: block;
+    }
+    #ServicePointSection .RightContent{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     footer .TopFooter .FooterList{
         justify-content: flex-start;
         margin-top: 15px;
+    }
+    footer.HizmetNoktalariFooter{
+        margin-top: 30px;
     }
     footer .TopFooter .ContactCol{
         align-items: flex-start;
@@ -1796,22 +2060,22 @@ Medias
     }
     #Shopping .TextCol-2 .Content:hover .Circle{
         top: 83%;
-        left: 70%;
+        left: 75%;
     }
     #Shopping .TextCol-3 .Content .Circle2{
         left: 50%;
     }
     #Shopping .TextCol-3 .Content .Circle{
-        width: 70px;
-        height: 70px;
-        top: 90%;
+        width: 40px;
+        height: 40px;
+        top: 85%;
     }
     #Shopping .TextCol-3 .Content:hover .Circle2{
         top: 0;
     }
     #Shopping .TextCol-3 .Content:hover .Circle{
-        top: 100%;
-        right: 80%;
+        top: 87%;
+        right: 60%;
     }
     #Services .SectionTitle h2,
     #Services .SectionTitle p{
@@ -1866,6 +2130,13 @@ Medias
     }
     #UserStories .SlideCol .Content .right > div{
         padding: 0 10px;
+    }
+    #Express .Card{
+        width: 90%;
+    }
+
+    footer.HomePageFooter{
+        margin-top: 100px;
     }
     footer .TopFooter  .col-12{
         margin-top: 20px;

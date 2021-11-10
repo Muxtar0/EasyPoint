@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/hamburger.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <!-- Links end -->
     <title>Easy Point</title>
 </head>
@@ -99,9 +100,27 @@
             </div>
             <div class="Content3 Card">
                 <p>E-Ticaret Partnerlerimiz</p>
-                <img src="assets/images/Frame (1).png" alt="">
-                <img src="assets/images/Frame (2).png" alt="">
-                <img src="assets/images/Frame (3).png" alt="">
+                    <!-- Swiper -->
+                <div class="swiper mySwiper PartnerlerimizSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/Frame (1).png" alt="">
+                            <img src="assets/images/Frame (2).png" alt="">
+                            <img src="assets/images/Frame (3).png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Frame (1).png" alt="">
+                            <img src="assets/images/Frame (2).png" alt="">
+                            <img src="assets/images/Frame (3).png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Frame (1).png" alt="">
+                            <img src="assets/images/Frame (2).png" alt="">
+                            <img src="assets/images/Frame (3).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- Banner Bottom end -->
@@ -219,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 TextCol TextCol-2">
+                <div  class="col-lg-6 TextCol TextCol-2">
                     <div class="Content">
                         <div class="Circle"></div>
                         <div class="Text">
@@ -228,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 ImageCol">
+                <div  class="col-lg-6 col-12 ImageCol ImageCol2">
                     <div class="Content">
                         <img src="assets/images/image 10 (1).png" alt="">
                     </div>
@@ -374,7 +393,7 @@
     <!-- Express end -->
 
     <!-- Footer start -->
-    <footer>
+    <footer class="HomePageFooter">
         <!-- Top Footer start -->
         <div class="TopFooter container">
             <div class="row">
@@ -461,6 +480,11 @@
 
     <!-- Scripts start -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".PartnerlerimizSwiper", {});
+    </script>
     <!-- Scripts end -->
 </body>
 </html>
