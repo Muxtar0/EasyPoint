@@ -1943,12 +1943,12 @@ Medias
         display: none;
     }
     #Banner .BannerBottom .Content3{
-        background: #111 ;
+        background: #DA3831 ;
         padding: 10px 0;
     }
     #Banner .BannerBackgroundImage{
         position: relative !important;
-        height: 400px !important;
+        
     }
     .SectionTitle p{
         width: 600px;
